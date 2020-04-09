@@ -5,6 +5,9 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #eaeaea;
 }
+.center {
+  text-align: center;
+}
 
 .wrapper {
   margin: 0 auto;
@@ -47,16 +50,134 @@ body {
 /* .navigation > li:first-child::before {
   display: none;
 } */
+
 .navigation > li > a {
   text-decoration: none;
   color: #494949;
 }
+
 .baner {
   background: url(../img/banerBg.png) center center no-repeat;
   background-size: cover;
   color: #fff;
   padding-top: 260px;
+  padding-bottom: 285px;
+  position: relative;
 }
+
 .pizza {
   position: absolute;
+  right: 0;
+  top: -230px;
+}
+.title {
+  font-size: 50px;
+  margin-bottom: 23px;
+}
+.description {
+  font-size: 25px;
+  line-height: 30px;
+  max-width: 570px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 23px;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+  border: 2px solid #fff;
+  padding: 16px 0;
+  display: block;
+  max-width: 190px;
+  text-align: center;
+}
+
+.titleSection {
+  font-size: 45px;
+  color: #282828;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 0 130px;
+  margin-bottom: 20px;
+}
+.titleSection::before,
+.titleSection::after {
+  content: "";
+  position: absolute;
+  background: url(../img/serf.png);
+  display: block;
+  width: 102px;
+  height: 28px;
+  transform: translateY(50%);
+}
+.titleSection::before {
+  left: 0;
+}
+.titleSection::after {
+  top: 0;
+  right: 0;
+}
+.titleSection + p {
+  font-size: 20px;
+  color: #959595;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 50px;
+}
+.menu > li {
+  position: relative;
+  padding: 0 20px;
+}
+
+.menu > li:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #494949;
+}
+.menu > li > a {
+  text-decoration: none;
+  color: #494848;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 18px;
+}
+.menu > li > a.active {
+  border-bottom: 4px solid #ee252d;
+  position: relative;
+}
+.menu > li > a.active:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom: 7px solid #ee252d;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  margin: 0 auto;
+}
+.box {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
 }
